@@ -68,7 +68,10 @@ img {
 
 .main-nav ul {
 	padding: none;
+	float: left;
 }
+
+
 
 /* ---- Layout Containers ---- */
 
@@ -82,7 +85,8 @@ img {
 	display: inline-block;
 	text-align:left;
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 1.8em;
+	font-weight: bold;
 	padding: 0 260px 0 0;
 	margin: 0;
 	text-transform: none;
@@ -103,9 +107,19 @@ img {
   margin: 0 0 20px 0;
 }
 
+.title {
+	font-size: 50px;
+}
+
+.masterdiver {
+	font-size: 25px;
+	font-weight: bold;
+	margin: none;
+}
+
 .team {
 	text-align: inline;
-	margin: 40px 0 50px 0;
+	margin: 35px 0 20px 0;
 	padding: 0 16px;
 }
 

@@ -34,7 +34,15 @@ nav ul li {
   position: relative;
 }
 
-nav ul li a {
+/*---------- Dropdown part----*/
+
+.main-nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.main-nav ul li a {
   display: block;
   font-family: arial;
   color: black;
@@ -43,28 +51,28 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li ul {
+.main-nav ul li ul {
   display: none;
-  precision: absolute;
-  bacground color: white;
+  position: absolute;
+  background-color: white;
   padding: 10px;
   border-radius: 0 0 4px 4px;
 }
 
-nav ul li:hover ul {
+.main-nav ul li:hover ul {
   display: block;
 
 }
 
-nav ul li ul li {
+.main-nav ul li ul li {
   width: 10px;
   border-radius: 4px;
 }
 
-nav ul li ul li a {
+.main-nav ul li ul li a {
   padding: 8px 14px;
 }
 
-nav ul li ul li a:hover {
+.main-nav ul li ul li a:hover {
   background-color: #f3f3f3;
 }
