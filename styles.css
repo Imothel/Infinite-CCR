@@ -90,6 +90,7 @@ img {
 .team {
 	text-align: inline;
 	margin: 40px 0 50px 0;
+	padding: 0 16px;
 }
 
 .primary-content {
