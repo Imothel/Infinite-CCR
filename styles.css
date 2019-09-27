@@ -9,7 +9,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	color: black;
+	color: #404040;
 }
 
 p {
@@ -17,10 +17,11 @@ p {
 	margin-bottom: .5em;
 }
 
+h1,
 h2,
 h3,
 a {
-	color: black;
+	color: #404040;
 }
 
 h2,
@@ -57,33 +58,48 @@ img {
 
 .main-nav a {
 	font-size: 1em;
-	color: black;
+	color: #404040;
 	text-transform: uppercase;
 }
 
 .main-nav a:hover {
-	color: slategrey;
+	color: #b3b3b3;
+}
+
+.main-nav ul {
+	padding: none;
 }
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-   padding-top: .5em;
-   padding-bottom: .5em;
+   padding-top: 5px;
+   padding-bottom: 5px;
+	 height: 80px;
+}
+
+.InfiniteCCR {
+	display: inline-block;
+	text-align:left;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 0 260px 0 0;
+	margin: 0;
+	text-transform: none;
 }
 
 .banner,
 .main-footer {
   text-align: center;
-	display: block;
+	display: center;
 }
 
 .banner {
-	color: black;
+	color: #404040;
 	background: url('images/bw-ocean.jpg') no-repeat top center;
 	background-size: cover;
-  height: 250px;
-	padding: 40px 0 0 0;
+  height: auto;
+	padding: 25px 25px;
   margin: 0 0 20px 0;
 }
 
@@ -142,12 +158,12 @@ img {
 /* ---- Page Elements ---- */
 
 .logo {
-	width: 160px;
-	align: left;
+	width: 240px;
+	align: center;
 }
 
 .headline {
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 /* =================================
