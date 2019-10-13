@@ -31,10 +31,16 @@ h3 {
 
 a {
 	text-decoration: none;
+	padding: 10px;
 }
 
 img {
 	max-width: 100%;
+}
+
+button {
+	float: left;
+	margin-right: 360px;
 }
 
 /* =================================
@@ -43,57 +49,73 @@ img {
 
 /* ---- Navigation ---- */
 
-.name {
-	font-size: 1.25em;
-  margin: 0;
-}
-
 /*===This is the links on top row===*/
-.name a,
-.main-nav a {
+.main-nav a,
+.footer-nav a {
 	text-align: center;
   display: block;
-  padding: 10px 15px;
-}
-
-.main-nav a {
 	font-size: 1em;
 	color: #404040;
 	text-transform: uppercase;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.footer-nav a:hover {
 	color: #b3b3b3;
 }
 
-.main-nav ul {
+.main-nav ul,
+.footer-nav ul {
+	display: inline-block;
 	padding: none;
 	float: left;
 }
 
+.main-nav,
+.social-icons {
+	display: inline-block;
+	overflow: hidden;
+}
 
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-   padding-top: 5px;
+   width: 100%;
+	 padding-top: 5px;
    padding-bottom: 5px;
 	 height: 80px;
+	 background-color: #f2f2f2;
+}
+
+/*------Facebook icon and link-----https://www.templatemonster.com/blog/how-to-add-social-media-icons-website/------*/
+
+
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+	padding-right: 50px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+
+.social-icons li img {
+  width:30px;
+  height:30px;
+  float: right;
 }
 
 .InfiniteCCR {
-	display: inline-block;
-	text-align:left;
-	text-transform: uppercase;
+	float:left;
 	font-size: 1.8em;
 	font-weight: bold;
-	padding: 0 260px 0 0;
+	padding: 0 400px 0 0;
 	margin: 0;
 	text-transform: none;
 }
 
-.banner,
-.main-footer {
+.main-footer,
+.footer-nav {
   text-align: center;
 	display: center;
 }
@@ -104,14 +126,16 @@ img {
 	background-size: cover;
   height: auto;
 	padding: 25px 25px;
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
+	text-align: center;
+	display: center;
 }
 
 .title {
 	font-size: 50px;
 }
 
-.masterdiver {
+.divemaster {
 	font-size: 25px;
 	font-weight: bold;
 	margin: none;
@@ -136,10 +160,6 @@ img {
 	height: 330px;
 }
 
-.col {
-  padding-right: 1em;
-  padding-left: 1em;
-}
 
 .main-footer {
 	padding: 1.5em;
@@ -149,25 +169,10 @@ img {
 	background-color: #f2f2f2;
 }
 
-/*------Facebook icon and link-----https://www.templatemonster.com/blog/how-to-add-social-media-icons-website/------*/
-
-.social-icons {
-  text-align: center;
-  }
-.social-icons li {
-  display:inline-block;
-  list-style-type:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  }
-.social-icons li a {
-  border-bottom: none;
-  }
-.social-icons li img {
-  width:30px;
-  height:30px;
-  margin-right: 20px;
+.footer-nav {
+	font-size: 15px;
 }
+
 
 /* ---- Page Elements ---- */
 
@@ -179,6 +184,7 @@ img {
 .headline {
   margin: 30px;
 }
+
 
 /* =================================
   Media Queries
@@ -201,14 +207,20 @@ img {
   width: 50%;
 }
 
-.main-nav {
-  float: right;
+.main-nav,
+.footer-nav {
+  float: left;
 }
 
-.main-nav li {
+.main-nav li,
+.footer-nav li {
   display: inline-block;
-  margin-left: 15px;
-	list-style: none;
+  list-style: none;
+}
+
+.main-nav,
+.social-icons {
+	float: right;
 }
 
 .tagline {
@@ -217,9 +229,12 @@ img {
 
 	/* ---- Float clearfix ---- */
 
+@media (min-width: 736px) {
+
 	.clearfix::after {
 		content: " ";
-		display: table;
+		visibility: hidden;
+		display: block;
 		clear: both;
 	}
 
