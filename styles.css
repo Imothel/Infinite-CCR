@@ -40,16 +40,15 @@ img {
 
 button {
 	float: left;
-	margin-right: 360px;
+	margin-right: 550px;
 }
 
 /* =================================
   Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
+/* ---- Navigation Footer and Main----------------- */
 
-/*===This is the links on top row===*/
 .main-nav a,
 .footer-nav a {
 	text-align: center;
@@ -67,16 +66,15 @@ button {
 .main-nav ul,
 .footer-nav ul {
 	display: inline-block;
-	padding: none;
-	float: left;
+	padding-left: 0;
+	float: right;
+	list-style: none;
 }
 
-.main-nav,
 .social-icons {
 	display: inline-block;
 	overflow: hidden;
 }
-
 
 /* ---- Layout Containers ---- */
 
@@ -109,7 +107,7 @@ button {
 	float:left;
 	font-size: 1.8em;
 	font-weight: bold;
-	padding: 0 400px 0 0;
+	padding-right: 520px;
 	margin: 0;
 	text-transform: none;
 }
@@ -126,7 +124,6 @@ button {
 	background-size: cover;
   height: auto;
 	padding: 25px 25px;
-  margin: 0 0 25px 0;
 	text-align: center;
 	display: center;
 }
@@ -138,31 +135,46 @@ button {
 .divemaster {
 	font-size: 25px;
 	font-weight: bold;
-	margin: none;
+	margin: 5px 0;
 }
 
 .team {
-	text-align: inline;
 	margin: 35px 0 20px 0;
-	padding: 0 16px;
+	padding-left: 15px;
 }
 
 .primary-content {
 	text-align: center;
+	font-size: 20px;
+	width: 100%;
+	padding: 30px;
+
 }
 
 .secondary-content {
 	text-align: left;
+	padding: 5px;
+	width: 100%;
 }
 
 .feat-img {
-	width: 330px;
-	height: 330px;
+	width: 100%;
+}
+
+.column {
+  float: left;
+	width: 33%;
+	padding: 15px;
+}
+
+.column p {
+	padding: 0 10px;
 }
 
 
+/*------------Footer-------------------*/
+
 .main-footer {
-	padding: 1.5em;
 	margin: 20px 0 0 0;
 	list-style: none;
 	background-size:cover;
@@ -190,26 +202,16 @@ button {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
-.name,
-.col {
-  float: left;
-}
-
-.primary,
-.secondary {
-  width: 50%;
-}
-
 .main-nav,
 .footer-nav {
-  float: left;
+  float: right;
 }
 
 .main-nav li,
@@ -218,7 +220,6 @@ button {
   list-style: none;
 }
 
-.main-nav,
 .social-icons {
 	float: right;
 }
@@ -226,32 +227,15 @@ button {
 .tagline {
   font-size: 1.4em;
 }
+}
 
-	/* ---- Float clearfix ---- */
-
-@media (min-width: 736px) {
+@media only screen and (min-width: 550px) {
 
 	.clearfix::after {
 		content: " ";
 		visibility: hidden;
 		display: block;
 		clear: both;
-	}
-
 }
 
-@media (min-width: 1025px) {
-  .container {
-    width: 90%;
-    max-width: 1150px;
-}
-
-.primary {
-  width: 33%;
-}
-
-.secondary,
-.tertiary {
-  width: 33%
-}
 }
