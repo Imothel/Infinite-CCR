@@ -71,6 +71,8 @@ button {
 	list-style: none;
 }
 
+
+
 .social-icons {
 	display: inline-block;
 	overflow: hidden;
@@ -82,10 +84,18 @@ button {
    width: 100%;
 	 padding-top: 5px;
    padding-bottom: 5px;
-	 height: 80px;
+	 height: auto;
 	 background-color: #f2f2f2;
+	 z-index: 999;
 }
 
+.main-nav ul .dropdown ul li a {
+	float: none;
+}
+
+.dropdown {
+	text-transform: uppercase;
+}
 /*------Facebook icon and link-----https://www.templatemonster.com/blog/how-to-add-social-media-icons-website/------*/
 
 
@@ -127,6 +137,7 @@ button {
 	text-align: center;
 	display: center;
 }
+
 
 .title {
 	font-size: 50px;
